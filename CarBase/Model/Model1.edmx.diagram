@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="8fff951aa65a4ef1be89e9e282feb82f" Name="Diagram1">
+        <EntityTypeShape EntityType="BaseAutoModel.Client" Width="1.5" PointX="3" PointY="5.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseAutoModel.Parking_Lot" Width="1.5" PointX="3" PointY="2.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseAutoModel.Role" Width="1.5" PointX="1.5" PointY="8.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseAutoModel.Statement" Width="1.5" PointX="6" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BaseAutoModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="1.5" IsExpanded="true" />
+        <AssociationConnector Association="BaseAutoModel.FK_Client_Parking_Lot" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="BaseAutoModel.Employee" Width="1.5" PointX="3.75" PointY="8.625" />
+        <AssociationConnector Association="BaseAutoModel.FK_Employee_Role" />
+        <AssociationConnector Association="BaseAutoModel.FK_Parking_Lot_Employee" />
+        <AssociationConnector Association="BaseAutoModel.FK_Statement_Employee" />
+        <EntityTypeShape EntityType="BaseAutoModel.Car" Width="1.5" PointX="0.75" PointY="3.625" />
+        <AssociationConnector Association="BaseAutoModel.FK_Client_Car" />
+        <AssociationConnector Association="BaseAutoModel.FK_Parking_Lot_Car" />
+        <AssociationConnector Association="BaseAutoModel.FK_Statement_Car" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
